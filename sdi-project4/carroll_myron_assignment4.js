@@ -4,7 +4,7 @@
 //My library
 
 alert(" works!");
-/*
+
 //1.Does a string follow a 123-456-7890 pattern like a phone number?
 var checkNumber = function (myNumber) {
     var dashCheck = /^(\d{3})-(\d{3})-(\d{4})$/; //Checks to see if the number has dashes in the right place.
@@ -59,9 +59,8 @@ var titleCase = function (words){
 };
 titleCase("fuLl saIl Rules!");
 
-//Given a string that is a list of things separated by a given string, as well as another string separator, return a string with the first separator changed to the second: "a,b,c" + "," + "/" → "a/b/c".
 
-*/
+
 //5.Format a number to use a specific number of decimal places, as for money: 2.1 → 2.10
 var fixNumber = function(myNumber) {
     var finalNum = console.log(myNumber.toFixed(2));
@@ -71,11 +70,7 @@ fixNumber(3.0896);
 
 
 
-//Fuzzy-match a number: is the number above or below a number within a certain percent?
-
-//Find the number of hours or days difference between two dates.
-
-//Given a string version of a number such as "42", return the value as an actual Number, such as 42.
+//6.Given a string version of a number such as "42", return the value as an actual Number, such as 42.
 var myNum = function(number){
         var finalNum = parseInt(number);
         var output = console.log(finalNum);
@@ -83,8 +78,13 @@ var myNum = function(number){
         };
     
 myNum("42");
-/*
+
+//Given a string that is a list of things separated by a given string, as well as another string separator, return a string with the first separator changed to the second: "a,b,c" + "," + "/" → "a/b/c".
+
+//Fuzzy-match a number: is the number above or below a number within a certain percent?
+
+//Find the number of hours or days difference between two dates.
+
 //Find the total value of just the numbers in an array, even if some of the items are not numbers.
 
 //Given an array of objects and the name of a key, return the array sorted by the value of that key in each of the objects: "a" + [{a:2},{a:3},{a:1}] → [{a:1},{a:2},{a:3}].
-*/
