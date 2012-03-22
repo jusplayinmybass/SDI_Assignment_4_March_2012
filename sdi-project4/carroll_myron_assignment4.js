@@ -20,7 +20,7 @@ checkNumber("765-236-6355");
 
 
 
-*/
+
 
 //2.Does a string follow an aaa@bbb.ccc pattern like an email address?
 var checkEmail = function (address) {
@@ -34,15 +34,21 @@ var checkEmail = function (address) {
         }
 };
 checkEmail("myronbennell@gmail.com")
-/*
+*/
 //Is the string a URL? (Does it start with http: or https:?)
-
-if () {
-				//Are the first 5 characters in the string http: or https:
-}; else{
-	console.log("Please enter a valaid web URL.");
+var checkURL = function (myURL) {
+        var urlCheck = /(http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?/;
+        if (myURL.match(urlCheck)) {
+            var urlGood = console.log("Perfect! Your URL, " + myURL + ", looks great.");
+            return urlGood;
+        } else {
+            var urlBad = console.log("Oh no! This won't work. Make sure your URL, " + myURL + ", follows the following format:  http://mydomain.com");
+            return urlBad;
+        }
 };
+checkURL("https:/ww.facebook.com/")
 
+/*
 //Title-case a string (split into words, then uppercase the first letter of each word)
 if () {
 				//Find where the spaces are and make the next character upper case.	
