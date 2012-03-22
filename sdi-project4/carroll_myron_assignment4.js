@@ -48,7 +48,7 @@ var checkURL = function (myURL) {
 };
 checkURL("https://www.facebook.com/")
 
-*/
+
 //4.Title-case a string (split into words, then uppercase the first letter of each word)
 var titleCase = function (words){
 	words = words.toLowerCase().replace(/\b[a-z]/g, //Makes all letters in string Lower Case
@@ -58,13 +58,19 @@ var titleCase = function (words){
 	console.log(words); 
 };
 titleCase("fuLl saIl Rules!");
-/*
+
 //Given a string that is a list of things separated by a given string, as well as another string separator, return a string with the first separator changed to the second: "a,b,c" + "," + "/" → "a/b/c".
+*/
+
+//5.Format a number to use a specific number of decimal places, as for money: 2.1 → 2.10
+var fixNumber = function(myNumber) {
+    var finalNum = console.log(myNumber.toFixed(2));
+    return finalNum;
+};
+fixNumber(3.0896);
 
 
-//Format a number to use a specific number of decimal places, as for money: 2.1 → 2.10
-	toFixed(x)
-
+/*
 //Fuzzy-match a number: is the number above or below a number within a certain percent?
 
 //Find the number of hours or days difference between two dates.
