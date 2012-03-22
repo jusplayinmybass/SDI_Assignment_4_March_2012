@@ -4,8 +4,8 @@
 //My library
 
 alert(" works!");
-
-//Does a string follow a 123-456-7890 pattern like a phone number?
+/*
+//1.Does a string follow a 123-456-7890 pattern like a phone number?
 var checkNumber = function (myNumber) {
     var dashCheck = /^(\d{3})-(\d{3})-(\d{4})$/; //Checks to see if the number has dashes in the right place.
     if (myNumber.match(dashCheck)) {
@@ -17,40 +17,24 @@ var checkNumber = function (myNumber) {
         }
     };
 checkNumber("765-236-6355");
-/*
-var phone = "407-555-1212"; // Phone number to be checked
-var numberString = phone.split("-");  //seperate the number into 3 different parts at the "-"
-console.log (numberString);
-// Make sure the strings are the right length.
-if (numberString.length[0] === 4 && numberString.length[1] === 4 && numberString.length[2] === 4) {
-console.log("You're phone number ", phone, "appears to be correctly formatted");
-} else {
-console.log(phone, "You're phone number is incorrectly formatted. Please use: 123-456-7890");
-}
+
 
 
 */
 
-
-
-
-//Does a string follow an aaa@bbb.ccc pattern like an email address?
+//2.Does a string follow an aaa@bbb.ccc pattern like an email address?
+var checkEmail = function (address) {
+        var newAddy = address.match(/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/); //Checks the string for the proper characters a-z, A-Z, 0-9, ._- followed by an @ then the same characters followed by a . then those characters again
+        if (newAddy) {
+            var good = console.log(address + " looks great! Thank You.");
+            return good;
+        } else {
+            var invalid = console.log(address + " is an INVALID e-mail address!");
+            return invalid;
+        }
+};
+checkEmail("myronbennell@gmail.com")
 /*
-var say = function (message){
-	console.log(message);
-};
-if () {
-        //is there an @ and a . in the string? If index of = -1 ask for valid email address.
-    var mystring.indexOf("@") = a;
-    var mystring.indexOf(".") = p;
-    if a < 0 || > 
-    if (p < 0){
-    	say("Sorry, please enter a valaid email address.")
-    };
-}; else{
-	console.log("Sorry, please enter a valaid email address.")
-};
-
 //Is the string a URL? (Does it start with http: or https:?)
 
 if () {
