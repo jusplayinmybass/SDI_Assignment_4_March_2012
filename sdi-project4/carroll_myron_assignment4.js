@@ -34,8 +34,8 @@ var checkEmail = function (address) {
         }
 };
 checkEmail("myronbennell@gmail.com")
-*/
-//Is the string a URL? (Does it start with http: or https:?)
+
+//3.Is the string a URL? (Does it start with http: or https:?)
 var checkURL = function (myURL) {
         var urlCheck = /(http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?/;
         if (myURL.match(urlCheck)) {
@@ -46,14 +46,19 @@ var checkURL = function (myURL) {
             return urlBad;
         }
 };
-checkURL("https:/ww.facebook.com/")
+checkURL("https://www.facebook.com/")
 
-/*
-//Title-case a string (split into words, then uppercase the first letter of each word)
-if () {
-				//Find where the spaces are and make the next character upper case.	
+*/
+//4.Title-case a string (split into words, then uppercase the first letter of each word)
+var titleCase = function (words){
+	words = words.toLowerCase().replace(/\b[a-z]/g, //Makes all letters in string Lower Case
+	function(letter) {
+    return letter.toUpperCase(); //Makes first letter of each word Upper Case
+	});
+	console.log(words); 
 };
-
+titleCase("fuLl saIl Rules!");
+/*
 //Given a string that is a list of things separated by a given string, as well as another string separator, return a string with the first separator changed to the second: "a,b,c" + "," + "/" → "a/b/c".
 
 
