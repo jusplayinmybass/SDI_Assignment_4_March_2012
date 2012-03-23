@@ -1,13 +1,13 @@
 //Author: Myron Carroll
-//SDI Assignment 4
-//March 2012
-//My library
+//SDI 1203 Assignment 4
+//22 March 2012
+//My JavaScript Library
 
 alert(" works!");
 
 //1.Does a string follow a 123-456-7890 pattern like a phone number?
 var checkNumber = function (myNumber) {
-    var dashCheck = /^(\d{3})-(\d{3})-(\d{4})$/; //Checks to see if the number has dashes in the right place.
+    var dashCheck = /^(\d{3})-(\d{3})-(\d{4})$/; //Checks to see if the number has numbers and dashes in the right place.
     if (myNumber.match(dashCheck)) {
             var numberGood = console.log(myNumber + " is valid, thanks."); //If dashes in the right place, says it's valaid and thanks.
             return numberGood;
@@ -33,7 +33,7 @@ var checkEmail = function (address) {
             return invalid;
         }
 };
-checkEmail("myronbennell@gmail.com")
+checkEmail("myronbennell@fullsail.edu")
 
 //3.Is the string a URL? (Does it start with http: or https:?)
 var checkURL = function (myURL) {
@@ -79,12 +79,3 @@ var myNum = function(number){
     
 myNum("42");
 
-//Given a string that is a list of things separated by a given string, as well as another string separator, return a string with the first separator changed to the second: "a,b,c" + "," + "/" → "a/b/c".
-
-//Fuzzy-match a number: is the number above or below a number within a certain percent?
-
-//Find the number of hours or days difference between two dates.
-
-//Find the total value of just the numbers in an array, even if some of the items are not numbers.
-
-//Given an array of objects and the name of a key, return the array sorted by the value of that key in each of the objects: "a" + [{a:2},{a:3},{a:1}] → [{a:1},{a:2},{a:3}].
